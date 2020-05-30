@@ -6,8 +6,13 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
         type: "input",
+        name: "title",
+        message: "What is your project name?"
+    },
+    {
+        type: "input",
         name: "github",
-        message: "What is your Github usernae?"
+        message: "What is your Github username?"
     },
     {
         type: "input",
@@ -32,26 +37,14 @@ const questions = [
     },
     {
         type: "input",
-        name: "Installation",
-        message: "what command should be run to install dependencies?",
-        default: "npm i"
-    },
-    {
-        type: "input",
-        name: "test",
-        message: "What command should be run to run tests?"
-        default: "npm test"
+        name: "Technologies",
+        message: "What technologies where used in the making of this project?",
     },
     {
         type: "input",
         name: "usage",
         message: "What does the user need to know about using the repo?",
     },
-    {
-        type: "input",
-        name: "usage",
-        message: "What does the user need to know about contributing to the repo?"
-    }
 ];
 
 function writeToFile(fileName, data) {

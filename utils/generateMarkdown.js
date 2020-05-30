@@ -1,10 +1,12 @@
+
+
 function generateMarkdown(data) {
   return `
 # ${data.title}
 
 ![Project Image](project-image-url)
 
-> This is a ReadMe template to help save you time and effort.
+> ${data.description}
 
 ---
 
@@ -25,14 +27,18 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 
 #### Technologies
 
-- Technology 1
-- Technology 2
+- ${data.technologies[0]}
+- ${data.technologies[1]}
+- ${data.technologies[2]}
+- ${data.technologies[3]}
+- ${data.technologies[4]}
 
 [Back To The Top](#read-me-template)
 
 ---
 
 ## How To Use
+${data.usage}
 
 #### Installation
 
@@ -54,7 +60,7 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 
 ## License
 
-MIT License
+${data.license}
 
 Copyright (c) [2020] [Eduardo Aguilar Jr]
 
@@ -82,8 +88,10 @@ SOFTWARE.
 
 ## Author Info
 
+- email - [${data.email}]
 - LinkedIn - [@eduardo89aguilar](https://www.linkedin.com/in/eduardo89aguilar/)
-- Website - [Eduardo Aguilar](https://reigningeddie.github.io/Home.html)
+- Website - [Eduardo Aguilar](${data.projectUrl})
+- Github - [${data.github}]
 
 [Back To The Top](#read-me-template)
 `;
