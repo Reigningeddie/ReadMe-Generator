@@ -56,7 +56,7 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 
 MIT License
 
-Copyright (c) [2017] [James Q Quick]
+Copyright (c) [2020] [Eduardo Aguilar Jr]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -82,8 +82,8 @@ SOFTWARE.
 
 ## Author Info
 
-- Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
-- Website - [James Q Quick](https://jamesqquick.com)
+- LinkedIn - [@eduardo89aguilar](https://www.linkedin.com/in/eduardo89aguilar/)
+- Website - [Eduardo Aguilar](https://reigningeddie.github.io/Home.html)
 
 [Back To The Top](#read-me-template)
 `;
