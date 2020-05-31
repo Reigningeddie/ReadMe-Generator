@@ -1,5 +1,6 @@
 
 
+
 function generateMarkdown(data) {
   return `
 # ${data.title}
@@ -27,11 +28,8 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 
 #### Technologies
 
-- ${data.technologies[0]}
-- ${data.technologies[1]}
-- ${data.technologies[2]}
-- ${data.technologies[3]}
-- ${data.technologies[4]}
+- ${data.technologies}
+
 
 [Back To The Top](#read-me-template)
 
@@ -46,9 +44,7 @@ ${data.usage}
 
 #### API Reference
 
-```html
-    <p>dummy code</p>
-```
+
 [Back To The Top](#read-me-template)
 
 ---

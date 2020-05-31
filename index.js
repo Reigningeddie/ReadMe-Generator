@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const inquirer = require("inquierer");
+const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 const questions = [
@@ -47,13 +47,13 @@ const questions = [
     },
 ];
 
-function writeToFile(fileName, data) {
-    return fs.writeFileSync.path.join(process.cwd(), fileName),  data);
+function writeToFile(filename, data) {
+    return fs.writeFileSync(path.join(process.cwd(), filename), data);
 }
 
 function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {
-        writeToFile("README.md", generateMarkdown({ ...inquirerResponses }));
+        writeToFile("README.md", generateMarkdown({ ...inquirerResponses}));
     })
 }
 
