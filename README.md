@@ -1,13 +1,9 @@
 
-
-
-function generateMarkdown(data) {
-  return `
-# ${data.title}
+# readme generator
 
 ![Project Image](project-image-url)
 
-> ${data.description}
+> clone repo and use on vscode
 
 ---
 
@@ -28,7 +24,7 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 
 #### Technologies
 
-- ${data.Technologies}
+- node , java
 
 
 [Back To The Top](#read-me-template)
@@ -36,7 +32,7 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 ---
 
 ## How To Use
-${data.usage}
+adf
 
 #### Installation
 
@@ -56,7 +52,7 @@ ${data.usage}
 
 ## License
 
-${data.license}
+MIT
 
 Copyright (c) [2020] [Eduardo Aguilar Jr]
 
@@ -84,13 +80,9 @@ SOFTWARE.
 
 ## Author Info
 
-- email - [${data.email}]
+- email - [eaguilar9105@yahoo.com]
 - LinkedIn - [@eduardo89aguilar](https://www.linkedin.com/in/eduardo89aguilar/)
-- Website - [Eduardo Aguilar](${data.Url})
-- Github - [${data.github}]
+- Website - [Eduardo Aguilar](Project)
+- Github - [reigningeddie]
 
 [Back To The Top](#read-me-template)
-`;
-}
-
-module.exports = generateMarkdown;
